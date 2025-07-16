@@ -10,7 +10,6 @@ read -p "🌐 Enter the origin-server server IP: " OriginServer
 read -p "🚪 Enter the udp2raw port on origin-server: " OriginServerUdp2raw_PORT
 
 echo "⏬ Installing required packages..."
-apt update -y
 
 # Handle apt lock
 while fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1 ; do
